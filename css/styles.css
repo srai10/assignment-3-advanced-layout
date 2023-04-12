@@ -1,0 +1,102 @@
+
+:root {
+    --red: #ec0a18;
+    --dk-green: #0e7e79;
+    --off-white: #f7f7f6;
+    --white: #ffffff;
+    --lt-grey: #edf0f2;
+}
+
+body {
+    background-color: var(--white);
+   /* font-family: 'Open Sans', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Ubuntu', sans-serif;*/
+    
+}
+
+.inner-container {
+    padding: 1.5rem;
+    margin-left: 0.5rem;
+
+    
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2.5rem;
+    margin-top: 1.5rem;
+}
+
+
+
+/************* *Header* *********/
+
+header {
+    background-color:
+
+  
+}
+
+header a {
+    text-decoration: none;
+    display: block;
+    
+}
+
+.menu a:hover,
+.menu a:active {
+    background-color: #f7f7f6;
+    border-radius: 6px;
+}
+
+.menu li {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    size: 18px;
+    line-height: 40px;
+    text-align: left;
+}
+
+.menu li > hr.solid {
+    border-top: 3px solid #bbb;
+}
+
+header nav {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease-in-out;
+    position: absolute;
+    top: 8.5rem;
+    left: 0;
+    width: 100vw;
+    background-color: var(--lt-grey);
+
+}
+
+
+
+.toggle-btn svg {
+    width: 4rem;
+    background-color: #ffffff;
+    border: none;
+
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+section {
+    padding: 1.5rem;
+}
+
+
+/************* form ************/
+section form {
+    border: 1px solid black;
+}
