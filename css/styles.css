@@ -9,7 +9,7 @@
 
 body {
     background-color: var(--white);
-   /* font-family: 'Open Sans', sans-serif;
+   /*font-family: 'Open Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Ubuntu', sans-serif;*/
     
@@ -24,7 +24,7 @@ body {
 
 .flex-container {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: space-between;
     padding: 0 2rem;
     margin-top: 1.5rem;
@@ -35,9 +35,7 @@ body {
 /************* *Header* *********/
 
 header {
-    background-color:
-
-  
+    background-color: var(--off-white);
 }
 
 header a {
@@ -111,18 +109,32 @@ h4 {
     font-family: 'Ubuntu', sans-serif;
     font-size: 22px;
     font-weight: medium;
-    font-color: 
+}
+
+h5 {
+    font-family:'Ubuntu', sans-serif; 
+    font-size: 22px;
+    font-weight: medium;
+    color: var(--dk-green);
 }
 
 p {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    font-weight:400;
+    font-weight:normal;
 }
 
-body {
-    padding: 1.5rem;
+.tab {
+    font-family:'Ubuntu', sans-serif; 
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
+
 }
+
+/*body {
+    padding: 1.5rem;
+}*/
 
 
 /************* form ************/
@@ -162,12 +174,6 @@ input {
  }
 
 
-
-   /* display: block;
-    align-items: flex-start;
-    height: calc(200px + 4rem)
- }*/
-
  .icon-card > div {
    
     height: 330px;
@@ -196,7 +202,11 @@ input {
     
 }
 
-.horizontal-content :first-child{
+.scroll-card {
+    padding: 1.5rem;
+}
+
+.flex-items one {
     background-color: var(--dk-green);
     color: #f7f7f6;
    
@@ -205,14 +215,45 @@ input {
 
 
 .horizontal-content {
-    display: flex;
+    display: grid;
+    grid-template-rows: auto auto;
     align-items: center;
+    grid-auto-flow: column;
     overflow: scroll;
     height: 260px;
+   
 }
 
 .horizontal-content > div {
-    flex: 0 0 225px;
+    /*flex: 0 0 225px;*/
     height: 260px;
+    background-color: var(--off-white);
+    margin: 1rem 0.5rem;
+    border-radius: 3px;
+    padding: 1rem;
+
 }
+
+.images-card {
+    background-color: var(--lt-grey);
+    padding: 1.5rem;
+}
+
+
+.card{  
+    max-width: 23.75rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+
+}
+
+.card-info {
+    background-color: var(--white);
+    padding: 4rem 0;
+}
+
+
+
+
+
 
