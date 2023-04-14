@@ -9,6 +9,7 @@
 
 body {
     background-color: var(--white);
+
    /*font-family: 'Open Sans', sans-serif;
     font-family: 'Source Sans Pro', sans-serif;
     font-family: 'Ubuntu', sans-serif;*/
@@ -74,6 +75,10 @@ header nav {
 
 }
 
+img {
+    width: 100px;
+    height: 70px;
+}
 
 
 .toggle-btn svg {
@@ -116,6 +121,8 @@ h5 {
     font-size: 22px;
     font-weight: medium;
     color: var(--dk-green);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p {
@@ -197,7 +204,7 @@ input {
     background-color: #ec0a18;
     color: #ffffff;
     border: none;
-    width: 80%;
+    width: 60%;
     height: 47px;
     
 }
@@ -221,6 +228,7 @@ input {
     grid-auto-flow: column;
     overflow: scroll;
     height: 260px;
+    
    
 }
 
@@ -230,7 +238,7 @@ input {
     background-color: var(--off-white);
     margin: 1rem 0.5rem;
     border-radius: 3px;
-    padding: 1rem;
+    padding: 0.5rem;
 
 }
 
@@ -251,6 +259,85 @@ input {
     background-color: var(--white);
     padding: 4rem 0;
 }
+
+.green-btn {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: var(--dk-green);
+    border-radius: 4px;
+    color: var(--white);
+    border: none;
+    width: 30%;
+    padding: 0.5rem;
+}
+
+.newsletter {
+    background-color: var(--red);
+    color: var(--white);
+    padding: 0.5rem;
+}
+
+.subscribe-btn {
+    
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin-top: 30px;
+    
+    
+}
+
+button {
+    border-radius: 7px;
+    font-family: 'Source Sans Pro', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 30px;
+}
+
+
+  
+.subscribe-btn:hover
+.button:active {
+    cursor: pointer;
+}
+
+/*********** Footer *********/
+
+
+.footer-list {
+    background-color: var(--white);
+}
+
+
+.menu-list li {
+    font-family:'Ubuntu', sans-serif;
+    font-size: medium;
+    list-style: none;
+    text-decoration: none;
+    text-align: right;
+    color: black;
+
+  
+}
+
+.menu-list a {
+    text-decoration: none;
+    
+}
+
+.disclaimer {
+    background-color: var(--lt-grey);
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+p.bottom-info {
+    line-height: 2rem;
+}
+
 
 
 
