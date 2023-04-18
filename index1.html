@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="inner-container flex-container">
+            <img src="img/logo.jpg" alt="Logo of the program"><a href="index.html"></a>
+            <button class="toggle-btn">
+                <svg viewBox="0 0 24 24">
+                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 17h7M5 12h14M5 7h14" />
+                </svg>
+            </button>
+        </div>
+        
+    </header>
+
+    <main>
+        <section>
+            <h1>Volunteer!</h1>
+            <p>Your support today will help us to continue to deliver amazing educational programs and experiences
+                that have the power to transform lives.</p>
+            <div class="flex-box">
+                <h5>Summer Camp Helpers</h5>
+                <p>Spend your summers with young learners in a fun, fulfilling environment.</p>
+            </div>
+            <div class="flex-box">
+                <h5>Mentors</h5>
+                <p>Our workshops are magical thanks to our mentors. Help learners get the most out of their
+                    experience</p>
+            </div>
+            <div class="flex-box">
+                <h5>Instructors</h5>
+                <p>We are seeking enthusiastic and self motivated individuals to help us deliver exceptional content
+                    to our learners.</p>
+            </div>
+            <div class="flex-box">
+                <h5>Chapter Leads</h5>
+                <p>Chapter leads are local leaders pioneering digital literacy in their communities.</p>
+            </div>
+        </section>
+        <section>
+            <div class="background-img">
+                <h2>Sign up!</h2>
+            </div>
+            <div class="inner-container">
+                <form action="#" method="post" name="Volunteer Form">
+                    <p>Fill out the fields below to sign up as a volunteer.</p>
+                    <fieldset>
+                        <div>
+                            <label for="name">Full Name</label>
+                            <input id="name" type="text" name="name" required>
+                        </div>
+                        <div>
+                            <label for="contact">Contact Number</label>
+                            <input id="contact" type="tel" name="phone" required pattern="\d{3}[\-][\d{3}[\-]\d{4}]">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input id="email" type="email" name="email" required>
+                        </div>
+                        <div>
+                            <label for="address">Street Address</label>
+                            <input id="address" type="text" name="street address" required>
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div>
+                            <label for="province">Province</label>
+                            <input id="province" type="text" name="province" required>
+                        </div>
+                        <div>
+                            <label for="postal-code">Postal Code</label>
+                            <input id="code" type="code" name="code" required>
+                        </div>
+                    </fieldset>
+                    <div>
+                        <p>Indicate areas to volunteer according to your skills:</p>
+                        <ul>
+                            <li><label for="camp-helper">
+                                    <input id="camp-helper" type="checkbox" name="camp-helper" required>Summer
+                                    Camp
+                                    Helper</label></li>
+                            <li><label for="mentor"><input id="mentor" type="checkbox" name="mentor"
+                                        required>Mentor</label></li>
+                            <li><label for="instructor"><input id="instructor" type="checkbox" name="instructor"
+                                        required>Instructor</label></li>
+                            <li><label for="chaper-lead"><input id="chaper-lead" type="checkbox" name="chaper-lead"
+                                        required>Chaper Lead</label></li>
+                        </ul>
+                    </div>
+                    <button class="submit-btn">
+                        SEND
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section>
+            <div class="footer-img">
+                <img src="img/logo.jpg" alt="Logo of the program" size="30%">
+            </div>
+            <div>
+                <ul class="menu-list">
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Work With Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                </ul>
+            </div>
+        </section>
+        <div class="disclaimer">
+            <p class="bottom-info">
+                Copyright © 2023<br>
+                For Educational Purposes Only
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

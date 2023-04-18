@@ -16,40 +16,43 @@
 
 <body>
     <header>
-        <div class="inner-container">
-            <div class="flex-container">
-                <img src="img/logo.jpg" alt="Logo of the program">
-                <button class="toggle-btn">
-                    <svg viewBox="0 0 24 24">
-                        <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M12 17h7M5 12h14M5 7h14" />
-                    </svg>
-                </button>
-            </div>
+        <div class="inner-container flex-container">
 
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">LEARN</a></li>
-                    <li><a href="#">TEACH</a></li>
-                    <li><a href="#">VOLUNTEER</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">BLOG</a></li>
-                </ul>
-            </nav>
+            <img src="img/logo.jpg" alt="Logo of the program">
+            <button class="toggle-btn">
+                <svg fill="none" viewBox="0 0 24 24">
+                    <path stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 17h7M5 12h14M5 7h14" />
+                </svg>
+            </button>
+        </div>
+
+        <nav>
+            <ul class="menu">
+                <li><a href="#">LEARN</a></li>
+                <li><a href="#">TEACH</a></li>
+                <li><a href="/index1.html">VOLUNTEER</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">BLOG</a></li>
+            </ul>
+        </nav>
         </div>
     </header>
+    <hr>
 
     <main>
-        <section>
+        <section class="banner">
             <h1>Experiences</h1>
             <p>We are excited to offer our popular in-person learning experiences as well as live online and hybrid
                 models, bringing accessible computer science to communities across Canada.</p>
-            <div class="search">
-                <form>
-                    <input type="search" name="search" placeholder="">
-                    <button type="submit"></button>
-                </form>
-            </div>
+
+            <form action="#" method="get" name="search" role="search">
+                <label class="sr-only" for="search">Search Bar</label>
+                <input id="search" type="text" placeholder="">
+
+            </form>
+
+
         </section>
         <section>
             <h2>Let's get started!</h2>
@@ -106,7 +109,7 @@
             <h2>Explore lessons</h2>
             <div>
                 <div class="horizontal-content">
-                    <div class="flex-items one">
+                    <div class="flex-items-one">
                         <h3>Post-Secondary Education</h3>
                         <p>A comprehensive approach to Post-Secondary Computer Science education includes learning about
                             the
@@ -162,9 +165,10 @@
             </section>
             <div>
                 <section class="card">
-
-                    <img src="img/image-2.jpg" alt="Students learning together" width="270" height="200">
-
+                    <picture>
+                        <source srcset="img/image-2-cropped.jpg" media="(min-width: 750px)">
+                        <img src="img/image-2.jpg" alt="Students learning together" width="270" height="200">
+                    </picture>
                     <div class="card-info">
                         <p>APR 11, 2023</p>
                         <P>JavaScript for the Web 18+</P>
@@ -173,7 +177,10 @@
             </div>
             <div>
                 <section class="card">
-                    <img src="img/image-1.jpg" alt="Students having conversation" width="270" height="200">
+                    <picture>
+                        <source srcset="img/image-1-cropped.jpg" media="(min-width=750px)">
+                        <img src="img/image-1.jpg" alt="Students having conversation" width="270" height="200">
+                    </picture>
                     <div class="card-info">
                         <p>APR 22, 2023</p>
                         <p>Webmaking with HTML & CSS 18+</p>
@@ -183,7 +190,10 @@
 
             <div>
                 <section class="card">
-                    <img src="img/image-4.jpg" alt="Students in the lounge laughing" width="270" height="200">
+                    <picture>
+                        <source srcset="img/image-4-cropped.jpg" media="(min-width:750px)">
+                        <img src="img/image-4.jpg" alt="Students in the lounge laughing" width="270" height="200">
+                    </picture>
                     <div class="card-info">
                         <p>MAY 4, 2023</p>
                         <p>Digital Tools for Branding 18+</p>
@@ -192,7 +202,10 @@
             </div>
             <div>
                 <section class="card">
+                    <picture>
+                    <source srcset="img/image-3-cropped.jpg" media="(min-width:750px)">
                     <img src="img/image-3.jpg" alt="Student studying in the class" width="270" height="200">
+                    </picture>
                     <div class="card-info">
                         <p>MAY 13, 2023</p>
                         <p>Artmaking with Scratch 9-12</p>
@@ -220,9 +233,12 @@
 
     <footer>
         <section class="footer-list">
-            <div>
-                <img src="img/logo.jpg" alt="Logo of the program" size="30%">
+            <div class="footer-img">
+                <a href="index.html">
+                    <img src="img/logo.jpg" alt="Logo of the program" size="30%"></a>
+
             </div>
+
             <div>
                 <ul class="menu-list">
                     <li><a href="#">Contact Us</a></li>
@@ -234,9 +250,9 @@
         </section>
         <div class="disclaimer">
             <p class="bottom-info">
-            Copyright © 2023<br>
-            For Educational Purposes Only
-        </p>
+                Copyright © 2023<br>
+                For Educational Purposes Only
+            </p>
         </div>
     </footer>
 
